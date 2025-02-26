@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clase 5 - forms</title>
+</head>
+
+<body>
+
+    <section>
+
+        <img id="img1" src="https://cdn.discordapp.com/attachments/1342673045084704828/1342979239233847397/Sin-titulo-1.png?ex=67bb9a61&is=67ba48e1&hm=f7f1d1ea3043243e4545d0a941f78943720ce4466cd02b8ac5517e820804e1b2&" alt="Talento tech logo">
+        <img id="img2" src="https://cdn.discordapp.com/attachments/1342673045084704828/1342979239233847397/Sin-titulo-1.png?ex=67bb9a61&is=67ba48e1&hm=f7f1d1ea3043243e4545d0a941f78943720ce4466cd02b8ac5517e820804e1b2&" alt="Talento tech logo">
+        <img id="img3" src="https://cdn.discordapp.com/attachments/1342673045084704828/1342979239233847397/Sin-titulo-1.png?ex=67bb9a61&is=67ba48e1&hm=f7f1d1ea3043243e4545d0a941f78943720ce4466cd02b8ac5517e820804e1b2&" alt="Talento tech logo">
+        <img id="img4" src="https://cdn.discordapp.com/attachments/1342673045084704828/1342979239233847397/Sin-titulo-1.png?ex=67bb9a61&is=67ba48e1&hm=f7f1d1ea3043243e4545d0a941f78943720ce4466cd02b8ac5517e820804e1b2&" alt="Talento tech logo">
+
+        <form action="https://jsonplaceholder.typicode.com/users" method="post">
+            <h1>Welcome</h1>
+            <fieldset id="credentials">
+                <input placeholder="username" type="text" name="nombre" id="0" maxlength="10" size="12" pattern="[A-Za-z0-9]+" required>
+                <input placeholder="email" type="email" name="email" id="1" required>
+                <input placeholder="password" type="password" name="password" id="2" maxlength="4"  required>
+                <select name="correo" id="">
+                    <option value="Gmail">Gmail</option>
+                    <option value="Outlook">Outlook</option>
+                    <option value="Icloud">Icloud</option>
+                </select>
+            </fieldset>
+            <br><br>
+            <fieldset>
+
+                <legend>Metodo de pago</legend>
+                <div>
+                    <input type="radio" name="Metodo" id="Efectivo" checked>
+                    <label for="Efectivo">Efectivo</label>
+                </div>
+                <div>
+                    <input type="radio" name="Metodo" id="Targeta">
+                    <label for="Targeta">Targeta</label>
+                </div>
+                <div>
+                    <input type="radio" name="Metodo" id="Mercadopago">
+                    <label for="Mercadopago">Mercadopago</label>
+                </div>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend for="textarea">Agregue los comentarios aqui</legend>
+                <textarea name="comentarios" id="10" cols="35" rows="4"></textarea>
+            </fieldset>
+
+                <br><br>
+                <div class="check-container">
+                    <input type="checkbox" name="keepLogin" id="KEEP LOGIN">
+                <label class="check-label" for="KEEP LOGIN">KEEP LOGIN</label>
+            </div>
+            <div class="check-container">
+                <input type="checkbox" name="sms" id="SMS">
+                <label class="check-label" for="SMS">RECIBIR MENSAJES A MI CORREO</label>
+            </div>
+            <div class="check-container">
+                <input type="checkbox" name="tyc" id="TYC">
+                <label class="check-label" for="TYC">ACEPTO TERMINOS Y CONDICIONES</label>
+            </div>
+            <input type="submit" value="enviar">
+        </form>
+    </section>
+</body>
+</html>
